@@ -1,8 +1,8 @@
-FROM openjdk:17--jdk-slim
+FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY target/demo.jar app.jar
+COPY target/DockerGit-0.0.1-SNAPSHOT.jar /app/app.jar
 
 EXPOSE 8080
 
